@@ -29,6 +29,7 @@ Thís is my arch linux + hyprland setup, and a guide to install
 - `wpctl`, `brightnessctl` (volume and brightness control)
 - `bluetui` (CLI bluetooth devices manager)
 
+\* I haven't modify `wlogout` to pywal yet
 \* `pywal-discord` has been tested to work with Vencord and Vesktop
 \* You will need to read more about `pywal-spicetify` if you use it. Basically, it will *apply color on the theme* spicetify is using, and it will not create a new theme
 
@@ -36,6 +37,7 @@ Thís is my arch linux + hyprland setup, and a guide to install
 - Copy everything in `.config` folder into `/home/username/.config/`
 - Edit the path `/home/username/` to your username accordingly, in all files 
 - About the `wallpaper.sh` script: It will use `rofi` as a wallpaper picker, then use `pywal` to change the system's color schemes. Another function is to randomly pick a wallpaper
+- You must edit `wallpaper.sh`: The path to wallpaper folder is fixed; it is using Vesktop to support Discord coloring, and a fixed spicetify theme (text)
 - About the `xdph.sh` script: [read here](https://wiki.hyprland.org/Useful-Utilities/xdg-desktop-portal-hyprland/#usage)
 
 # 3. Troubleshoot and tips
