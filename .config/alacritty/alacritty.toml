@@ -1,0 +1,2 @@
+# import = ["~/.config/alacritty/themes/dark_green.toml"]
+import = ["~/.cache/wal/colors-alacritty.toml"]
