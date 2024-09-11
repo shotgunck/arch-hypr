@@ -1,3 +1,4 @@
+
 # About
 Thís is my arch linux + hyprland setup, and a guide to install
 # 1. Must-have
@@ -29,8 +30,11 @@ Thís is my arch linux + hyprland setup, and a guide to install
 - `wpctl`, `brightnessctl` (volume and brightness control)
 - `bluetui` (CLI bluetooth devices manager)
 
+
 \* I haven't modify `wlogout` to pywal yet
+
 \* `pywal-discord` has been tested to work with Vencord and Vesktop
+
 \* You will need to read more about `pywal-spicetify` if you use it. Basically, it will *apply color on the theme* spicetify is using, and it will not create a new theme
 
 # 2. Quick guide
@@ -43,8 +47,7 @@ Thís is my arch linux + hyprland setup, and a guide to install
 # 3. Troubleshoot and tips
 
 ## 3.0 "I forgot how to navigate Hyprland"
-This will help during the first time you use Hyprland on your empty Arch
-By default, the "super" key is your Windows key (the one next to Alt)
+This will help during the first time you use Hyprland on your empty Arch. By default, the "super" key is your Windows key (the one next to Alt)
 - `Win + Q`: open terminal
 - `Win + E`: open file manager
 - `Win + R`: open app launcher
@@ -61,7 +64,8 @@ sudo pacman -Qdtq | sudo pacman -Rns -
 sudo pacman -Qqd | sudo pacman -Rsu - # deeper cleaning; this might delete some "certificates" that firefox needed, so whitelist it or reinstall it later
 ```
 ## 3.2 Bottles fix
-[Bottles](usebottles.com) is a Wine wrapper, which is basically a Window emulator to run Windows apps on Linux
+[Bottles](usebottles.com) is basically a Windows emulator to run Windows apps on Linux
+
 The following steps should fix some troubles like the Microsoft login screen, support obscure applications or "open-in-browser" popup
 - Install dependencies: `dotnet48` `d3dcompiler_47` `wininet` `ierutil` `urlmon`
 - Use the "debug" way to find out what's wrong: `flatpak run --command=bottles-cli com.usebottles.bottles run --help`. This should show every errors on the terminal
